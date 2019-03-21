@@ -1,0 +1,33 @@
+@import 'styles/variables.scss';
+@import 'styles/mixins.scss';
+@import 'styles/navbar.scss';
+
+#header-section {
+    .help-link {
+        border-right: 0.05 * $base-border-width solid $matterhorn-gray;
+
+        a {
+            text-decoration: none;
+            color: $black !important;
+            padding: 0 1 * $base-padding;
+        }
+    }
+
+    .dropdown {
+        .user-link {
+            color: $black;
+            padding-left: 1 * $base-padding;
+        }
+    }
+    .user-image{
+        width: 60%;
+        margin-left: -1.5 * $base-margin; 
+        @media (max-width: $screen-xs) {
+            width: 25%;
+            margin-left: 0* $base-margin; 
+        }
+    }
+    .navbar-brand {
+        padding: 0 * $base-padding !important;
+    }
+}

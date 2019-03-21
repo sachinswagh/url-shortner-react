@@ -1,0 +1,9 @@
+@import 'styles/cards.scss';
+.user-image{
+  width: 60%;
+  margin-left: -1.5 * $base-margin;
+  @media (max-width: $screen-xs) {
+      width: 25%;
+      margin-left: 0* $base-margin;
+  }
+}
